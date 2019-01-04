@@ -26,34 +26,59 @@ ul {
 header {
     background-repeat: no-repeat;
     background-position: center;
-    width: 1920;
-    }
+
+}
+
+header .left .clear::after {
+    float: left;
+    width: 100%;
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header .left .contact {
+    float: left;
+    width: 100%;
+    padding: 21px 0;
+}
 
 header .left .contact a {
     font-size: 13px;
     line-height: 22px;
     color: #132f30;
     text-decoration-line: none;
-
-}
-
-header .left {
-    float: left;
-    width: 50%;
-}
-
-header .left .social  {
+    padding: 0 0 21px;
     width: 25%;
+    float: left;
+}
+
+header .left .social {
+    width: 20%;
+    padding: 24px 0 24px;
     float: left;
 }
 
 header .left .clock {
+    font-size: 13px;
+    line-height: 16px;
+    font-family: "Boxed Book";
+    color: #00a9af;
     width: 25%;
+    padding: 24px;
     float: left;
 }
 
 header .logo {
-float: left;
+    float: left;
+    width: calc(100% - 544px);
+    padding: 0 10px 90px;
+}
+
+header .logo + span {
+    float: left;
+    width: calc(100% - 544px);
+    padding: 0 10px 90px;
 }
 
 header .logo span.fd {
@@ -61,7 +86,7 @@ header .logo span.fd {
     line-height: 26px;
     color: #113132;
     font-weight: 600;
-    float: center;
+
 }
 
 header .logo span.inv {
@@ -69,6 +94,20 @@ header .logo span.inv {
     line-height: 26px;
     color: #113132;
     font-weight: 200;
+}
+
+header .right .clear::after {
+    float: left;
+    width: 100%;
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header .right .con {
+    float: left;
+    width: 50%;
+
 }
 
 header .right .con a {
@@ -79,12 +118,18 @@ header .right .con a {
     text-decoration: none;
 }
 
+header .button a {
+    float: right;
+    width: 50%;
+    text-decoration: none;
+}
+
 header .button span.skyp {
     font-size: 13px;
     line-height: 26px;
     color: #11a6d1;
     font-weight: 500;
-    text-decoration: none;
+
 }
 
 header .button span.log {
@@ -92,7 +137,6 @@ header .button span.log {
     line-height: 26px;
     color: #79ab19;
     font-weight: 500;
-    text-decoration: none;
 }
 
 header .button span.reg {
@@ -100,18 +144,18 @@ header .button span.reg {
     line-height: 26px;
     color: #00a688;
     font-weight: 500;
-    text-decoration: none;
 }
 
-header .menu {
-
-}
-
-header .menu li {
+header .menuLeft {
 
 }
 
-header .menu li a {
+header .menuLeft li {
+    display: inline-block;
+    margin-left: 18px;
+}
+
+header .menuLeft li a {
     font-size: 15px;
     line-height: 26px;
     color: #ffffff;
@@ -119,7 +163,29 @@ header .menu li a {
     text-decoration: none;
 }
 
+header .menuRight {
 
+}
+
+header .menuRight li {
+    display: inline-block;
+    margin-right: 18px;
+}
+
+header .menuRight li a {
+    font-size: 15px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.content .statistic {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: auto;
+}
 
 .content .label {
     width: 25%;
@@ -168,15 +234,14 @@ header .menu li a {
     font-weight: 600;
 }
 
-
-.content .infStat span:nth-child(3){
+.content .infStat span:nth-child(3) {
     color: #ffffff;
     font-size: 33px;
     line-height: 27px;
     font-weight: 600;
 }
 
-.content .infStat span:nth-child(4){
+.content .infStat span:nth-child(4) {
     color: #ffffff;
     font-size: 14px;
     line-height: 24px;
@@ -391,6 +456,45 @@ header .menu li a {
     color: #00b998;
 }
 
+footer .partnersLeft {
+    display: block;
+
+}
+
+footer .menuRight {
+    display: block;
+}
+
+.menuRight li.mf1 {
+    float: left;
+    width: 25%;
+}
+
+.menuRight li.mf2 {
+    float: left;
+    width: 25%;
+}
+
+.menuRight li.mf3 {
+    float: left;
+    width: 25%;
+}
+
+.menuRight li.mf4 {
+    float: left;
+    width: 25%;
+}
+
+footer .footerCenter {
+    float: left;
+    width: 50%;
+}
+
+footer .rightFooter {
+    float: left;
+    width: 25%;
+}
+
 footer .menuFooter a {
     font-size: 14px;
     line-height: 24px;
@@ -404,6 +508,7 @@ footer .logoFooter span:nth-child(2) {
     font-weight: 600;
     color: #ffffff;
 }
+
 footer .logoFooter span:nth-child(3) {
     font-size: 25px;
     line-height: 31px;
