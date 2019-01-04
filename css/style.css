@@ -23,17 +23,37 @@ ul {
     padding: 0 15px;
 }
 
-
+header {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1920;
+    }
 
 header .left .contact a {
     font-size: 13px;
     line-height: 22px;
     color: #132f30;
     text-decoration-line: none;
+
+}
+
+header .left {
+    float: left;
+    width: 50%;
+}
+
+header .left .social  {
+    width: 25%;
+    float: left;
+}
+
+header .left .clock {
+    width: 25%;
+    float: left;
 }
 
 header .logo {
-
+float: left;
 }
 
 header .logo span.fd {
@@ -41,6 +61,7 @@ header .logo span.fd {
     line-height: 26px;
     color: #113132;
     font-weight: 600;
+    float: center;
 }
 
 header .logo span.inv {
@@ -98,9 +119,337 @@ header .menu li a {
     text-decoration: none;
 }
 
-.content .label span.1 {
-    font-size: 15px;
-    line-height: 26px;
+
+
+.content .label {
+    width: 25%;
+    float: left;
+}
+
+.content .label span.lab1 {
+    font-size: 21px;
+    line-height: 50px;
     color: #ffffff;
     font-weight: 200;
 }
+
+.content .label span.lab2 {
+    font-size: 21px;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.content .label span.lab3 {
+    font-size: 21px;
+    line-height: 27px;
+    color: #ffffff;
+    font-weight: 200;
+}
+
+.content .label span.lab4 {
+    font-size: 55px;
+    line-height: 60px;
+    color: #00bfc6;
+    font-weight: 600;
+}
+
+.content .label span.lab5 {
+    font-size: 55px;
+    line-height: 60px;
+    color: #88c612;
+    font-weight: 600;
+}
+
+.content .label span.lab6 {
+    font-size: 55px;
+    line-height: 60px;
+    color: #00b998;
+    font-weight: 600;
+}
+
+
+.content .infStat span:nth-child(3){
+    color: #ffffff;
+    font-size: 33px;
+    line-height: 27px;
+    font-weight: 600;
+}
+
+.content .infStat span:nth-child(4){
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.content .label2 {
+    color: #ffffff;
+    font-size: 123px;
+    line-height: 121px;
+    font-weight: 600;
+}
+
+.content .infLeft p.mom {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #88c612;
+}
+
+.content .infLeft p.proc {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #00b998;
+}
+
+.content .infCentr span.proc1 {
+    font-size: 14px;
+    line-height: 46px;
+    font-weight: 700;
+    color: #00b998;
+}
+
+.content .infCentr span.proc2 {
+    font-size: 14px;
+    line-height: 46px;
+    font-weight: 700;
+    color: #88c612;
+}
+
+.content .infCentr span.proc3 {
+    font-size: 14px;
+    line-height: 46px;
+    font-weight: 700;
+    color: #00bfc6;
+}
+
+.content .infRight p.rost {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #00bfc6;
+}
+
+.content .infRight p.refProg {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #1ebcea;
+}
+
+.content .infKomp span.comp {
+    font-size: 39px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #132f30;
+}
+
+.content .imfKomp span.nazv {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #183751;
+}
+
+.content .infKomp p.nazv {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #183751;
+}
+
+.content .infKomp a {
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #7fbd07;
+}
+
+.content .detail span.nameReg {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #132f30;
+}
+
+.content .detail p.nameReg {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #132f30;
+}
+
+.content .detail a.nameReg {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #132f30;
+    text-decoration: none;
+}
+
+.content a.licens {
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.content .newsBlock span.news {
+    font-size: 23px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #88c612;
+}
+
+.content .newsBlock p.chate {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #88c612;
+}
+
+.content .newsBlock span.date {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #00bfc6;
+}
+
+.content .newsBlock p.link {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.content .newsBlock a.part {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #88c612;
+}
+
+.content .newsBlock a.watchNew {
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #88c612;
+}
+
+.content .reviews span.reviews {
+    font-size: 23px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #00b998;
+}
+
+.content .reviews span.fio {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #00c8a4;
+}
+
+.content .reviews span.adress {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #00c8a4;
+}
+
+.content .reviews span.date {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #00bfc6;
+}
+
+.content .reviews p.otz {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.content .reviews a.linkRef {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #00b998;
+}
+
+.content .reviews a.otz {
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #00b998;
+}
+
+footer .menuFooter a {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #88c612;
+}
+
+footer .logoFooter span:nth-child(2) {
+    font-size: 25px;
+    line-height: 31px;
+    font-weight: 600;
+    color: #ffffff;
+}
+footer .logoFooter span:nth-child(3) {
+    font-size: 25px;
+    line-height: 31px;
+    font-weight: 200;
+    color: #ffffff;
+}
+
+footer .copyright span {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+footer .contactFooter a:nth-child(1) {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #00b998;
+}
+
+footer .contactFooter a:nth-child(2) {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #00b998;
+}
+
+footer .contactFooter a:nth-child(3) {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #00bfc6;
+}
+
+footer .contactFooter a:nth-child(4) {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #00bfc6;
+}
+
+
+
+
