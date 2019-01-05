@@ -25,8 +25,7 @@ ul {
 
 header {
     background-repeat: no-repeat;
-    background-position: center;
-
+    background-position: cover;
 }
 
 header .left .clear::after {
@@ -178,6 +177,10 @@ header .menuRight li a {
     color: #ffffff;
     font-weight: 500;
     text-decoration: none;
+}
+.contentImg {
+    background-repeat: no-repeat;
+    background-position: cover;
 }
 
 .content .statistic {
