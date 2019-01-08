@@ -21,25 +21,42 @@ ul {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    position: relative;
+}
+
+/*header .backimg {*/
+    /*width: 1920px;*/
+    /*height: 186px;*/
+    /*position: absolute;*/
+    /*top: 0px;*/
+    /*left: 50%;*/
+    /*margin-left: -960px;*/
+    /*z-index: -1;*/
+/*}*/
+
+header {
+    z-index: 1;
+    position: relative;
+    background-image: url(../img/png/headerback.png);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
 }
 
 header .left {
-    position: absolute;
+    float: left;
+    display: inline-block;
+    max-width: 450px;
+    width: 100%;
 }
 
-header .left .clear {
-    float: left;
-    width: 100%;
-    content: '';
-    display: block;
+.clear {
     clear: both;
 }
 
 header .left .contact {
-    float: left;
 
-    display: inline-block;
-    position: absolute;
+    margin-top: 21px;
 }
 
 header .left .contact a {
@@ -47,19 +64,19 @@ header .left .contact a {
     line-height: 22px;
     color: #132f30;
     text-decoration-line: none;
-    position: relative;
 
-    float: left;
-    display: inline-block;
 }
 
+header .left .contact a img{
+    vertical-align: baseline;
+}
 
 header .left .social {
-    /*width: 20%;*/
-    padding: 24px 0 24px;
     float: left;
+}
+
+header .left .social a {
     display: inline-block;
-    position: relative;
 }
 
 header .left .clock {
@@ -67,82 +84,73 @@ header .left .clock {
     line-height: 16px;
     font-family: "Boxed Book";
     color: #00a9af;
-    width: 25%;
-    padding: 24px;
-    float: left;
+    float: right;
+
+}
+
+header .left .clock .leftClock, header .left .clock .rightClock{
     display: inline-block;
 }
 
-header .backimg {
-    width: 1920px;
-    height: 186px;
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    margin-left: -960px;
-    z-index: -1;
+header .left .clock .leftClock .timeWrapper{
+    width: 42px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    text-align: center;
+    display: inline-block;
 }
 
-header {
-    z-index: 1;
-    position: relative;
+header .left .clock .leftClock .timeWrapper{
+    background: url("../img/png/time_01.png");
+}
+
+header .left .clock .leftClock .timeWrapper span{
+    color: white;
+    line-height: 40px;
 }
 
 header .logo {
-    position: absolute;
-    float: left;
-   }
-
-header .logo span:nth-child(1) {
-    position: relative;
-    float: left;
-    padding: 0 0 0 30px;
+   position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 200px;
+    text-align: center;
 }
 
-header .logo span:nth-child(2) {
-    position: relative;
-    float: left;
-    padding: 0 0 0 30px;
+header .logo a{
+    text-decoration: none;
+    display: block;
 }
-
 /*header .logo + span {*/
     /*float: left;*/
     /*width: calc(100% - 544px);*/
     /*padding: 0 10px 90px;*/
 /*}*/
 
-/*header .logo span.fd {*/
-    /*font-size: 21px;*/
-    /*line-height: 26px;*/
-    /*color: #113132;*/
-    /*font-weight: 600;*/
+header .logo p span.fd {
+    font-size: 21px;
+    line-height: 26px;
+    color: #113132;
+    font-weight: 600;
+    margin-right: -5px;
+}
 
-/*}*/
+header .logo p span.inv {
+    font-size: 21px;
+    line-height: 26px;
+    color: #113132;
+    font-weight: 200;
+}
 
-/*header .logo span.inv {*/
-    /*font-size: 21px;*/
-    /*line-height: 26px;*/
-    /*color: #113132;*/
-    /*font-weight: 200;*/
-/*}*/
 header .right {
     float: right;
-    position: absolute;
-}
-header .right .clear {
-    float: right;
-    width: 100%;
-    content: '';
-    display: block;
-    clear: both;
-
+    display: inline-block;
+    text-align: right;
 }
 
-header .right .con {
-    float: right;
-    width: 50%;
-position: relative;
-}
 
 header .right .con a {
     font-size: 13px;
@@ -151,13 +159,12 @@ header .right .con a {
     font-weight: 300;
     text-decoration: none;
 }
-header .button {
-    float: right;
-    position: relative;
+
+header .right .button div{
+    display: inline-block;
 }
+
 header .button a {
-    float: right;
-    width: 50%;
     text-decoration: none;
 }
 
@@ -183,13 +190,21 @@ header .button span.reg {
     font-weight: 500;
 }
 
-header .menuLeft {
+header .menu {
+    margin-top: 45px;
+}
 
+header .menu .menuLeft a {
+    display: block;
+}
+header .menuLeft {
+    float: left;
+    display: inline-block;
 }
 
 header .menuLeft li {
     display: inline-block;
-    margin-left: 18px;
+    margin-right: 18px;
 }
 
 header .menuLeft li a {
@@ -201,12 +216,13 @@ header .menuLeft li a {
 }
 
 header .menuRight {
-
+    float: right;
+    display: inline-block;
 }
 
 header .menuRight li {
     display: inline-block;
-    margin-right: 18px;
+    margin-left: 18px;
 }
 
 header .menuRight li a {
@@ -217,51 +233,16 @@ header .menuRight li a {
     text-decoration: none;
 }
 
-.content .backimg {
-    width: 1920px;
-    height: 623px;
-    position: absolute;
-    top: -244px;
-    left: 50%;
-    margin-left: -960px;
-    z-index: -2;
-}
-
-.content .backimg2 {
-    width: 1920px;
-    height: 320px;
-    position: absolute;
-    top: 315px;
-    left: 50%;
-    margin-left: -960px;
-    z-index: -3;
-
-}
-
-.content .backimg3 {
-    width: 1920px;
-    height: 772px;
-    position: absolute;
-    top: 1702px;
-    left: 50%;
-    margin-left: -960px;
-    z-index: -3;
-
-}
-
-.content .backimg4 {
-    width: 1920px;
-    height: 602px;
-    position: absolute;
-    top: 2408px;
-    left: 50%;
-    margin-left: -960px;
-    z-index: -4;
+.content .backImg1 {
+    z-index: -1;
+    margin: 0px;
 }
 
 .content {
     position: relative;
-    z-index: -1;
+    z-index: 1;
+    background-position: center;
+    background-size: cover;
 }
 
 .content .label {
@@ -563,9 +544,9 @@ footer .menuRight {
 }
 
 footer .backimg {
-    width: 1920px;
-    height: 368px;
-    position: absolute;
+    /*width: 1920px;*/
+    /*height: 368px;*/
+    position: relative;
     top: 1121px;
     left: 50%;
     margin-left: -960px;
