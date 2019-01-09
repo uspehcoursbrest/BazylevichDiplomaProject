@@ -25,13 +25,13 @@ ul {
 }
 
 /*header .backimg {*/
-    /*width: 1920px;*/
-    /*height: 186px;*/
-    /*position: absolute;*/
-    /*top: 0px;*/
-    /*left: 50%;*/
-    /*margin-left: -960px;*/
-    /*z-index: -1;*/
+/*width: 1920px;*/
+/*height: 186px;*/
+/*position: absolute;*/
+/*top: 0px;*/
+/*left: 50%;*/
+/*margin-left: -960px;*/
+/*z-index: -1;*/
 /*}*/
 
 header {
@@ -67,7 +67,7 @@ header .left .contact a {
 
 }
 
-header .left .contact a img{
+header .left .contact a img {
     vertical-align: baseline;
 }
 
@@ -88,11 +88,11 @@ header .left .clock {
 
 }
 
-header .left .clock .leftClock, header .left .clock .rightClock{
+header .left .clock .leftClock, header .left .clock .rightClock {
     display: inline-block;
 }
 
-header .left .clock .leftClock .timeWrapper{
+header .left .clock .leftClock .timeWrapper {
     width: 42px;
     height: 40px;
     background-repeat: no-repeat;
@@ -102,32 +102,34 @@ header .left .clock .leftClock .timeWrapper{
     display: inline-block;
 }
 
-header .left .clock .leftClock .timeWrapper{
+header .left .clock .leftClock .timeWrapper {
     background: url("../img/png/time_01.png");
 }
 
-header .left .clock .leftClock .timeWrapper span{
+header .left .clock .leftClock .timeWrapper span {
     color: white;
     line-height: 40px;
 }
 
 header .logo {
-   position: absolute;
+    position: absolute;
     margin: 0 auto;
     left: 0;
     right: 0;
     width: 200px;
     text-align: center;
+
 }
 
-header .logo a{
+header .logo a {
     text-decoration: none;
     display: block;
 }
+
 /*header .logo + span {*/
-    /*float: left;*/
-    /*width: calc(100% - 544px);*/
-    /*padding: 0 10px 90px;*/
+/*float: left;*/
+/*width: calc(100% - 544px);*/
+/*padding: 0 10px 90px;*/
 /*}*/
 
 header .logo p span.fd {
@@ -160,7 +162,7 @@ header .right .con a {
     text-decoration: none;
 }
 
-header .right .button div{
+header .right .button div {
     display: inline-block;
 }
 
@@ -197,6 +199,7 @@ header .menu {
 header .menu .menuLeft a {
     display: block;
 }
+
 header .menuLeft {
     float: left;
     display: inline-block;
@@ -292,14 +295,86 @@ header .menuRight li a {
     font-weight: 600;
 }
 
-.content .infStat span:nth-child(3) {
+.content .infStat .open span:nth-child(1) {
+    top: 10px;
+    left: 70px;
+    text-align: center;
+    display: block;
+    margin: 10px;
+    position: absolute;
+}
+
+.content .infStat .open span:nth-child(2) {
+    top: 10px;
+    left: 0;
+    /*text-align: center;*/
+    display: block;
+    margin: 10px;
+    position: absolute;
+}
+
+.content .infStat .open span:nth-child(3) {
+    top: 10px;
+    left: 0;
+    /*text-align: center;*/
+    display: block;
+    margin: 10px;
+    position: absolute;
+}
+
+
+
+
+
+
+.content .infStat .open {
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 20px;
+    width: 200px;
+}
+
+.content .infStat .inv {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 243px;
+    width: 200px;
+    top: 120px;
+    text-align: center;
+}
+
+.content .infStat .payments1 {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 200px;
+    top: 240px;
+    text-align: center;
+}
+
+.content .infStat .payinv {
+    position: absolute;
+    margin: 0 auto;
+    left: 243px;
+    right: 0;
+    width: 200px;
+    top: 120px;
+    text-align: center;
+}
+
+.content .infStat .open span:nth-child(2) {
+
     color: #ffffff;
     font-size: 33px;
     line-height: 27px;
     font-weight: 600;
 }
 
-.content .infStat span:nth-child(4) {
+.content .infStat .open span:nth-child(3) {
     color: #ffffff;
     font-size: 14px;
     line-height: 24px;
