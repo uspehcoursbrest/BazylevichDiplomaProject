@@ -24,15 +24,6 @@ ul {
     position: relative;
 }
 
-/*header .backimg {*/
-/*width: 1920px;*/
-/*height: 186px;*/
-/*position: absolute;*/
-/*top: 0px;*/
-/*left: 50%;*/
-/*margin-left: -960px;*/
-/*z-index: -1;*/
-/*}*/
 
 header .backImg {
     width: 1920px;
@@ -49,16 +40,15 @@ header {
     z-index: 1;
 }
 
+.bodyWrap {
+    overflow: hidden;
+}
 
 header .left {
     float: left;
     display: inline-block;
     max-width: 450px;
     width: 100%;
-}
-
-.bodyWrap {
-    overflow: hidden;
 }
 
 .clear {
@@ -158,6 +148,23 @@ header .logo p span.inv {
     font-weight: 200;
 }
 
+header .logo .invisLink {
+    position: relative;
+    z-index: 1;
+}
+
+header .logo .invisLink > a {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+}
+
 header .right {
     float: right;
     display: inline-block;
@@ -247,123 +254,269 @@ header .menuRight li a {
     text-decoration: none;
 }
 
-.content .backImg1 {
-    z-index: -1;
-    margin: 0px;
+.content .statistic .backImg1 {
+    width: 1920px;
+    height: 634px;
+    position: absolute;
+    top: -33px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -2;
+    filter: drop-shadow(15px 15px 10px rgba(0, 0, 0, 0.10));
 }
 
-.content {
+.content .statistic {
     position: relative;
-    z-index: 1;
-    background-position: center;
-    background-size: cover;
+    z-index: -1;
+    height: 600px;
 }
 
-.content .label {
+.content .label .clear {
+    clear: both;
+}
+
+.content .labelInf {
     width: 25%;
     float: left;
+    margin: 70px 0 0 0;
+
 }
 
-.content .label span.lab1 {
+.content .label .lab1 span:nth-child(1) {
     font-size: 21px;
     line-height: 50px;
     color: #ffffff;
     font-weight: 200;
 }
 
-.content .label span.lab2 {
+.content .label .lab1 span:nth-child(2) {
     font-size: 21px;
     line-height: 50px;
     color: #ffffff;
     font-weight: 600;
 }
 
-.content .label span.lab3 {
+.content .label .lab1 p:nth-child(3) {
     font-size: 21px;
     line-height: 27px;
     color: #ffffff;
     font-weight: 200;
 }
 
-.content .label span.lab4 {
+.content .label .lab2 p:nth-child(1) {
     font-size: 55px;
     line-height: 60px;
     color: #00bfc6;
     font-weight: 600;
 }
 
-.content .label span.lab5 {
+.content .label .lab2 p:nth-child(2) {
     font-size: 55px;
     line-height: 60px;
     color: #88c612;
     font-weight: 600;
 }
 
-.content .label span.lab6 {
+.content .label .lab2 p:nth-child(3) {
     font-size: 55px;
     line-height: 60px;
     color: #00b998;
     font-weight: 600;
+
+}
+
+
+.content .label .labelInf button {
+    position: center;
+}
+
+.content .infStat {
+    position: relative;
+    text-align: center;
+    top: 30px;
+    right: 2px;
+
 }
 
 .content .infStat .open span:nth-child(1) {
-    top: 10px;
-    left: 70px;
+    top: 15px;
+    left: 82px;
     text-align: center;
     display: block;
     margin: 10px;
     position: absolute;
+    font-size: 25px;
 }
 
-.content .infStat .open span:nth-child(2) {
-    top: 10px;
-    left: 0;
-    /*text-align: center;*/
-    display: block;
-    margin: 10px;
-    position: absolute;
-}
 
 .content .infStat .open span:nth-child(3) {
-    top: 10px;
-    left: 0;
-    /*text-align: center;*/
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    top: 60px;
+    left: 62px;
+    display: block;
+    margin: 10px;
+    position: absolute;
+}
+
+.content .infStat .open span:nth-child(4) {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    top: 70px;
+    left: 30px;
     display: block;
     margin: 10px;
     position: absolute;
 }
 
 
+.content .infStat .open span:nth-child(5) {
+    color: #ffffff;
+    font-size: 27px;
+    line-height: 33px;
+    font-weight: 600;
+    top: 100px;
+    left: 36px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+}
+
+.content .infStat .inv span:nth-child(1) {
+    top: 15px;
+    left: 82px;
+    text-align: center;
+    display: block;
+    margin: 10px;
+    position: absolute;
+    font-size: 25px;
+}
 
 
+.content .infStat .inv span:nth-child(3) {
+    color: #ffffff;
+    font-size: 27px;
+    line-height: 33px;
+    font-weight: 600;
+    top: 74px;
+    left: 69px;
+    display: block;
+    margin: 10px;
+    position: absolute;
+}
 
+.content .infStat .inv span:nth-child(4) {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    top: 100px;
+    left: 54px;
+    display: block;
+    margin: 10px;
+    position: absolute;
+}
+
+.content .infStat .payinv span:nth-child(1) {
+    top: 15px;
+    left: 82px;
+    text-align: center;
+    display: block;
+    margin: 10px;
+    position: absolute;
+    font-size: 25px;
+}
+
+
+.content .infStat .payinv span:nth-child(3) {
+    color: #ffffff;
+    font-size: 27px;
+    line-height: 33px;
+    font-weight: 600;
+    top: 74px;
+    left: 55px;
+    display: block;
+    margin: 10px;
+    position: absolute;
+}
+
+.content .infStat .payinv span:nth-child(4) {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    top: 100px;
+    left: 40px;
+    display: block;
+    margin: 10px;
+    position: absolute;
+}
+
+.content .infStat .payments1 span:nth-child(1) {
+    top: 15px;
+    left: 82px;
+    text-align: center;
+    display: block;
+    margin: 10px;
+    position: absolute;
+    font-size: 25px;
+}
+
+
+.content .infStat .payments1 span:nth-child(3) {
+    color: #ffffff;
+    font-size: 27px;
+    line-height: 33px;
+    font-weight: 600;
+    top: 74px;
+    left: 50px;
+    display: block;
+    margin: 10px;
+    position: absolute;
+}
+
+.content .infStat .payments1 span:nth-child(4) {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    top: 100px;
+    left: 60px;
+    display: block;
+    margin: 10px;
+    position: absolute;
+}
 
 .content .infStat .open {
-    position: relative;
+    position: absolute;
     margin: 0 auto;
     left: 0;
     right: 0;
     top: 20px;
     width: 200px;
+
 }
 
 .content .infStat .inv {
     position: absolute;
     margin: 0 auto;
     left: 0;
-    right: 243px;
+    right: 246px;
     width: 200px;
-    top: 120px;
-    text-align: center;
+    top: 140px;
 }
 
 .content .infStat .payments1 {
     position: absolute;
     margin: 0 auto;
     left: 0;
-    right: 0;
+    right: 2.5px;
     width: 200px;
-    top: 240px;
+    top: 260px;
     text-align: center;
 }
 
@@ -373,31 +526,32 @@ header .menuRight li a {
     left: 243px;
     right: 0;
     width: 200px;
-    top: 120px;
+    top: 140px;
     text-align: center;
 }
 
-.content .infStat .open span:nth-child(2) {
 
-    color: #ffffff;
-    font-size: 33px;
-    line-height: 27px;
-    font-weight: 600;
+
+.content .infStat2 .backImg2 {
+    width: 1920px;
+    height: 320px;
+    position: absolute;
+    top: -74px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -3;
 }
 
-.content .infStat .open span:nth-child(3) {
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 600;
+.content .infStat2 {
+    position: relative;
+    z-index: -2;
+    height: 300px;
 }
 
-.content .label2 {
-    color: #ffffff;
-    font-size: 123px;
-    line-height: 121px;
-    font-weight: 600;
+.content .infLeft {
+    float: left;
 }
+
 
 .content .infLeft p.mom {
     font-size: 14px;
@@ -406,11 +560,37 @@ header .menuRight li a {
     color: #88c612;
 }
 
+.content .infLeft .infL1 {
+    margin-right: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.content .infLeft .infL2 {
+    margin-right: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.content .infIcon {
+    display: inline-block;
+}
+
+.content .infText {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .content .infLeft p.proc {
     font-size: 14px;
     line-height: 22px;
     font-weight: 600;
     color: #00b998;
+}
+
+.content .infCentr {
+    float: left;
+    margin-left: 196px;
 }
 
 .content .infCentr span.proc1 {
@@ -434,6 +614,20 @@ header .menuRight li a {
     color: #00bfc6;
 }
 
+.content .infCentr .cL, .cC, .cR {
+    display: inline-block;
+}
+
+.content .infRight .infR1, .infR2 {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.content .infRight {
+    float: right;
+
+}
+
 .content .infRight p.rost {
     font-size: 14px;
     line-height: 22px;
@@ -446,6 +640,38 @@ header .menuRight li a {
     line-height: 22px;
     font-weight: 600;
     color: #1ebcea;
+}
+
+.content .about .backImg3 {
+    width: 1920px;
+    height: 701px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -3;
+}
+
+.content .about {
+    position: relative;
+    z-index: -2;
+    height: 695px;
+}
+
+.content .detail .backImg4 {
+    width: 1920px;
+    height: 772px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -3;
+}
+
+.content .detail {
+    position: relative;
+    z-index: -2;
+    height: 750px;
 }
 
 .content .infKomp span.comp {
@@ -505,6 +731,22 @@ header .menuRight li a {
     font-weight: 600;
     color: #ffffff;
     text-decoration: none;
+}
+
+.content .newsRev .backImg5 {
+    width: 1920px;
+    height: 607px;
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -4;
+}
+
+.content .newsRev {
+    position: relative;
+    z-index: -3;
+    height: 600px;
 }
 
 .content .newsBlock span.news {
@@ -630,10 +872,10 @@ footer .menuRight {
 }
 
 footer .backimg {
-    /*width: 1920px;*/
-    /*height: 368px;*/
-    position: relative;
-    top: 1121px;
+    width: 1920px;
+    height: 368px;
+    position: absolute;
+    top: -100px;
     left: 50%;
     margin-left: -960px;
     z-index: -2;
@@ -642,6 +884,7 @@ footer .backimg {
 footer {
     position: relative;
     z-index: 1;
+    height: 358px;
 }
 
 footer .footerCenter {
