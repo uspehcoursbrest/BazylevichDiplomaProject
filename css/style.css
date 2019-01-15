@@ -531,7 +531,6 @@ header .menuRight li a {
 }
 
 
-
 .content .infStat2 .backImg2 {
     width: 1920px;
     height: 320px;
@@ -674,34 +673,82 @@ header .menuRight li a {
     height: 750px;
 }
 
-.content .infKomp span.comp {
+.content .detail .detailCenter {
+    position: absolute;
+    top: 27px;
+    left: 277px;
+}
+
+.content .detail .detailRight {
+    position: absolute;
+    background-color: #ffffff;
+    left: 921px;
+    height: 308px;
+    width: 209px;
+    top: 73px;
+}
+
+.content .infKomp {
+    text-align: center;
+}
+
+.content .infKomp .infLab {
+    padding: 50px 0 0 0;
+}
+
+.content .infKomp .infNaz {
+    padding: 70px 0 0 0;
+}
+
+
+.content .infKomp .infLab label {
     font-size: 39px;
     line-height: 25px;
     font-weight: 700;
     color: #132f30;
 }
 
-.content .imfKomp span.nazv {
-    font-size: 15px;
-    line-height: 25px;
-    font-weight: 600;
-    color: #183751;
-}
-
-.content .infKomp p.nazv {
+.content .infKomp .infNaz span:nth-child(2) {
     font-size: 15px;
     line-height: 25px;
     font-weight: 300;
     color: #183751;
 }
 
-.content .infKomp a {
+.content .infKomp .infNaz span:nth-child(1) {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #183751;
+}
+
+.content .infKomp .button {
+    padding: 150px 0 0 0;
+}
+
+.content .infKomp .button a {
     font-size: 17px;
     line-height: 26px;
     font-weight: 600;
     text-decoration: none;
     color: #7fbd07;
+
 }
+
+.content .detail .detail1 {
+    position: relative;
+}
+
+.content .detail .detail1 .detailLeft {
+    background-color: #ffffff;
+    width: 217px;
+    height: 303px;
+    position: absolute;
+    top: 79px;
+    left: 34px;
+    text-align: left;
+}
+
 
 .content .detail span.nameReg {
     font-size: 14px;
@@ -887,14 +934,66 @@ footer {
     height: 358px;
 }
 
+footer .footerLeft {
+    display: inline-block;
+    width: 0px;
+}
+
+footer .footerLeft .partnersLeft {
+    display: table;
+    width: 33%;
+}
+
+footer .tCell1 {
+    display: table-cell;
+
+    padding: 0 65px 0 0;
+}
+
+footer .tCell2 {
+    display: table-cell;
+    width: 33%;
+    padding: 0 65px 0 0;
+}
+
+footer .tCell3 {
+    display: table-cell;
+    width: 33%;
+
+}
+
+footer .menuFooter {
+    text-align: left;
+    display: table;
+    width: 33%;
+    margin-top: 84px;
+}
+
+footer .menuFooter .mf1 {
+    display: table-cell;
+    padding-right: 50px;
+}
+
+footer .menuFooter .mf2 {
+    display: table-cell;
+    padding-right: 50px;
+}
+footer .menuFooter .mf3 {
+    display: table-cell;
+    padding-right: 50px;
+}
+footer .menuFooter .mf4 {
+    display: table-cell;
+
+}
+
 footer .footerCenter {
-    float: left;
-    width: 50%;
+    display: inline-block;
+    margin-left: 540px;
 }
 
 footer .rightFooter {
-    float: left;
-    width: 25%;
+    
 }
 
 footer .menuFooter a {
