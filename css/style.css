@@ -944,7 +944,6 @@ footer .backimg {
 footer {
     position: relative;
     z-index: 1;
-    height: 358px;
 }
 
 footer .footerLeft {
@@ -957,19 +956,47 @@ footer .footerLeft .partnersLeft {
     width: 33%;
 }
 
-footer .tCell1 {
+footer .footerLeft .tCell1 {
     display: table-cell;
 
     padding: 0 65px 0 0;
 }
 
-footer .tCell2 {
+footer .footerLeft .tCell2 {
     display: table-cell;
     width: 33%;
     padding: 0 65px 0 0;
 }
 
-footer .tCell3 {
+footer .footerLeft .tCell3 {
+    display: table-cell;
+    width: 33%;
+
+}
+
+footer .rightFooter {
+    display: inline-block;
+    width: 465px;
+    vertical-align: top;
+}
+
+footer .partnersRight {
+    width: 33%;
+}
+
+footer .rightFooter .tCell1 {
+    display: table-cell;
+
+    padding: 0 65px 0 0;
+}
+
+footer .rightFooter .tCell2 {
+    display: table-cell;
+    width: 33%;
+    padding: 0 65px 0 0;
+}
+
+footer .rightFooter .tCell3 {
     display: table-cell;
     width: 33%;
 
@@ -1007,8 +1034,48 @@ footer .footerCenter {
     margin-left: 540px;
 }
 
-footer .rightFooter {
+footer .footerCenter .logoFooter {
+    position: absolute;
+    margin: 0 auto;
 
+    right: 0;
+    width: 200px;
+    text-align: center;
+    top: -122px;
+    left: 0px;
+}
+
+footer .footerCenter .socialFooter {
+    position: absolute;
+    margin: 0 auto;
+    right: 0;
+    text-align: center;
+    top: 135px;
+    left: 0px;
+}
+
+footer .footerCenter .copyright {
+    position: relative;
+    margin: 0 auto;
+    right: 0;
+    left: -32px;
+}
+
+footer .footerCenter .logoFooter .invisLink {
+    position: relative;
+    z-index: 1;
+}
+
+footer .footerCenter .logoFooter .invisLink > a {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
 }
 
 footer .menuFooter a {
@@ -1018,14 +1085,18 @@ footer .menuFooter a {
     color: #88c612;
 }
 
-footer .logoFooter span:nth-child(2) {
+footer .logoFooter span:nth-child(1) {
     font-size: 25px;
     line-height: 31px;
     font-weight: 600;
     color: #ffffff;
 }
 
-footer .logoFooter span:nth-child(3) {
+footer .logoFooter p {
+    margin: -32px 0px 0px 0px;
+}
+
+footer .logoFooter span:nth-child(2) {
     font-size: 25px;
     line-height: 31px;
     font-weight: 200;
@@ -1038,6 +1109,27 @@ footer .copyright span {
     font-weight: 300;
     color: #ffffff;
 }
+
+footer .contactFooter {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+footer .rightFooter .telFooter {
+    width: 33%;
+    float: left;
+    margin-top: 70px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+footer .rightFooter .widgFooter {
+    width: 33%;
+    float: left;
+    margin-top: 70px;
+
+}
+
 
 footer .contactFooter a:nth-child(1) {
     font-size: 13px;
