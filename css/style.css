@@ -65,7 +65,11 @@ header .left .contact a {
     line-height: 22px;
     color: #132f30;
     text-decoration-line: none;
+    margin-right: 23px;
+}
 
+header .left .contact span {
+    margin-right: 10px;
 }
 
 header .left .contact a img {
@@ -74,6 +78,7 @@ header .left .contact a img {
 
 header .left .social {
     float: left;
+    margin-top: 10px;
 }
 
 header .left .social a {
@@ -86,11 +91,12 @@ header .left .clock {
     font-family: "Boxed Book";
     color: #00a9af;
     float: right;
-
+    margin-top: 10px;
 }
 
 header .left .clock .leftClock, header .left .clock .rightClock {
     display: inline-block;
+    vertical-align: middle;
 }
 
 header .left .clock .leftClock .timeWrapper {
@@ -119,19 +125,13 @@ header .logo {
     right: 0;
     width: 200px;
     text-align: center;
-
+    top: 10px;
 }
 
 header .logo a {
     text-decoration: none;
     display: block;
 }
-
-/*header .logo + span {*/
-/*float: left;*/
-/*width: calc(100% - 544px);*/
-/*padding: 0 10px 90px;*/
-/*}*/
 
 header .logo p span.fd {
     font-size: 21px;
@@ -171,6 +171,9 @@ header .right {
     text-align: right;
 }
 
+header .right .con {
+    margin-top: 21px;
+}
 
 header .right .con a {
     font-size: 13px;
@@ -180,9 +183,32 @@ header .right .con a {
     text-decoration: none;
 }
 
-header .right .button div {
-    display: inline-block;
+header .right .con span {
+    padding: 10px;
 }
+
+header .right .button {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 43px;
+}
+
+header .right .button .but1 {
+    position: absolute;
+    left: -200px;
+}
+
+header .right .button .but2 {
+
+    position: absolute;
+    left: -35px;
+}
+
+header .right .button .but3 {
+    position: absolute;
+    left: 96px;
+}
+
 
 header .button a {
     text-decoration: none;
@@ -193,7 +219,10 @@ header .button span.skyp {
     line-height: 26px;
     color: #11a6d1;
     font-weight: 500;
-
+    top: 10px;
+    position: absolute;
+    left: 0;
+    right: 34px;
 }
 
 header .button span.log {
@@ -201,6 +230,10 @@ header .button span.log {
     line-height: 26px;
     color: #79ab19;
     font-weight: 500;
+    position: absolute;
+    left: 0;
+    right: 35px;
+    top: 10px;
 }
 
 header .button span.reg {
@@ -208,6 +241,10 @@ header .button span.reg {
     line-height: 26px;
     color: #00a688;
     font-weight: 500;
+    position: absolute;
+    left: 0;
+    right: 33px;
+    top: 10px;
 }
 
 header .menu {
@@ -271,7 +308,7 @@ header .menuRight li a {
     width: 1920px;
     height: 634px;
     position: absolute;
-    top: -33px;
+    top: -43px;
     left: 50%;
     margin-left: -960px;
     z-index: -2;
@@ -338,10 +375,28 @@ header .menuRight li a {
 
 }
 
-
-.content .label .labelInf button {
-    position: center;
+.content .label .labelInf .investButt {
+    margin-top: 45px;
 }
+
+.content .label .labelInf .investButt a {
+    position: relative;
+
+}
+
+
+.content .label .labelInf .investButt a span {
+    position: absolute;
+    color: #88c612;
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    right: 50px;
+    top: -31px;
+}
+
 
 .content .infStat {
     position: relative;
@@ -397,6 +452,14 @@ header .menuRight li a {
     margin: 0 auto;
     display: block;
     position: absolute;
+}
+
+.content .inv .popug {
+    left: 0px;
+    right: 65px;
+    top: -64px;
+    position: absolute;
+    z-index: 1;
 }
 
 .content .infStat .inv span:nth-child(1) {
@@ -548,7 +611,7 @@ header .menuRight li a {
     width: 1920px;
     height: 320px;
     position: absolute;
-    top: -74px;
+    top: -83px;
     left: 50%;
     margin-left: -960px;
     z-index: -3;
@@ -586,6 +649,7 @@ header .menuRight li a {
 
 .content .infIcon {
     display: inline-block;
+    vertical-align: middle;
 }
 
 .content .infText {
@@ -602,7 +666,12 @@ header .menuRight li a {
 
 .content .infCentr {
     float: left;
-    margin-left: 196px;
+    margin-left: 80px;
+    margin-top: -15px;
+}
+
+.content .infCentr img {
+    position: absolute;
 }
 
 .content .infCentr span.proc1 {
@@ -628,6 +697,7 @@ header .menuRight li a {
 
 .content .infCentr .cL, .cC, .cR {
     display: inline-block;
+    padding-right: 10px;
 }
 
 .content .infRight .infR1, .infR2 {
@@ -684,6 +754,7 @@ header .menuRight li a {
     position: relative;
     z-index: 0;
     height: 750px;
+    top: -208px;
 }
 
 .content .detail .detailCenter {
@@ -747,7 +818,7 @@ header .menuRight li a {
 }
 
 .content .infKomp .button {
-    padding: 150px 0 0 0;
+    position: relative;
 }
 
 .content .infKomp .button a {
@@ -756,7 +827,24 @@ header .menuRight li a {
     font-weight: 600;
     text-decoration: none;
     color: #7fbd07;
+    top: 300px;
+    left: 70px;
+    right: 0;
+    position: absolute;
+}
 
+.content .infKomp .button span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 17px;
+}
+
+.content .infKomp .button {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 17px;
 }
 
 .content .detail .detail1 {
@@ -779,6 +867,8 @@ header .menuRight li a {
     line-height: 22px;
     font-weight: 600;
     color: #132f30;
+    padding-left: 36px;
+    padding-top: 10px;
 }
 
 .content .detail p.nameReg {
@@ -786,6 +876,11 @@ header .menuRight li a {
     line-height: 22px;
     font-weight: 300;
     color: #132f30;
+    padding-left: 36px;
+}
+
+.content .detail .detailButt {
+    position: relative;
 }
 
 .content .detail a.nameReg {
@@ -794,21 +889,30 @@ header .menuRight li a {
     font-weight: 300;
     color: #132f30;
     text-decoration: none;
+    padding-left: 36px;
 }
 
-.content a.licens {
+.content .detail .detailButt a.licens span {
     font-size: 17px;
     line-height: 26px;
     font-weight: 600;
     color: #ffffff;
     text-decoration: none;
+    position: absolute;
+    left: 37px;
+    top: 17px;
+}
+
+.content .detail .detailButt a {
+    left: 402px;
+    position: absolute;
+    top: 547px;
 }
 
 .content .newsRev .backImg5 {
     width: 1920px;
     height: 607px;
     position: absolute;
-    top: -45px;
     left: 50%;
     margin-left: -960px;
     z-index: -4;
@@ -819,6 +923,7 @@ header .menuRight li a {
     position: relative;
     z-index: -1;
     height: 600px;
+    top: -252px;
 }
 
 .content .newsBlock span.news {
@@ -956,6 +1061,8 @@ footer .backimg {
 footer {
     position: relative;
     z-index: 1;
+    top: -207px;
+    height: 60px;
 }
 
 footer .footerLeft {
@@ -1175,6 +1282,37 @@ footer .contactFooter a:nth-child(4) {
     color: #00bfc6;
 }
 
+/*вторая страница*/
+
+.logoReg {
+    position: relative;
+}
+
+.logoReg .backImg {
+    width: 1920px;
+    height: 384px;
+    position: absolute;
+    top: -43px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -1;
+}
 
 
+.footer footer .backimg {
+    width: 1920px;
+    height: 368px;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -2;
+}
+
+.footer footer {
+    position: relative;
+    z-index: 1;
+    top: 257px;
+    height: 368px;
+}
 
