@@ -33,6 +33,7 @@ header .backImg {
     left: 50%;
     margin-left: -960px;
     z-index: -1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); ;
 }
 
 header {
@@ -1313,6 +1314,6 @@ footer .contactFooter a:nth-child(4) {
     position: relative;
     z-index: 1;
     top: 257px;
-    height: 368px;
+    height: 495px;
 }
 
