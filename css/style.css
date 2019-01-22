@@ -38,7 +38,7 @@ header .backImg {
 
 header {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .bodyWrap {
@@ -57,8 +57,7 @@ header .left {
 }
 
 header .left .contact {
-
-    margin-top: 21px;
+    margin-top: 16px;
 }
 
 header .left .contact a {
@@ -66,7 +65,7 @@ header .left .contact a {
     line-height: 22px;
     color: #132f30;
     text-decoration-line: none;
-    margin-right: 23px;
+    padding-right: 23px;
 }
 
 header .left .contact span {
@@ -75,11 +74,12 @@ header .left .contact span {
 
 header .left .contact a img {
     vertical-align: baseline;
+    padding-left: 6px;
 }
 
 header .left .social {
     float: left;
-    margin-top: 10px;
+    margin-top: 16px;
 }
 
 header .left .social a {
@@ -92,7 +92,7 @@ header .left .clock {
     font-family: "Boxed Book";
     color: #00a9af;
     float: right;
-    margin-top: 10px;
+    margin-top: 16px;
 }
 
 header .left .clock .leftClock, header .left .clock .rightClock {
@@ -318,7 +318,7 @@ header .menuRight li a {
 
 .content .statistic {
     position: relative;
-    z-index: 0;
+    z-index: 1;
     height: 600px;
 }
 
@@ -620,7 +620,7 @@ header .menuRight li a {
 
 .content .infStat2 {
     position: relative;
-    z-index: -1;
+    z-index: 0;
     height: 300px;
 }
 
@@ -634,6 +634,7 @@ header .menuRight li a {
     line-height: 22px;
     font-weight: 600;
     color: #88c612;
+    text-transform: uppercase;
 }
 
 .content .infLeft .infL1 {
@@ -663,11 +664,12 @@ header .menuRight li a {
     line-height: 22px;
     font-weight: 600;
     color: #00b998;
+    text-transform: uppercase;
 }
 
 .content .infCentr {
     float: left;
-    margin-left: 80px;
+    margin-left: 56px;
     margin-top: -15px;
 }
 
@@ -716,6 +718,7 @@ header .menuRight li a {
     line-height: 22px;
     font-weight: 600;
     color: #00bfc6;
+    text-transform: uppercase;
 }
 
 .content .infRight p.refProg {
@@ -723,6 +726,7 @@ header .menuRight li a {
     line-height: 22px;
     font-weight: 600;
     color: #1ebcea;
+    text-transform: uppercase;
 }
 
 .content .about .backImg3 {
@@ -753,7 +757,7 @@ header .menuRight li a {
 
 .content .detail {
     position: relative;
-    z-index: 0;
+    z-index: 1;
     height: 750px;
     top: -208px;
 }
@@ -802,6 +806,7 @@ header .menuRight li a {
     line-height: 25px;
     font-weight: 700;
     color: #132f30;
+    text-transform: uppercase;
 }
 
 .content .infKomp .infNaz span:nth-child(2) {
@@ -922,16 +927,46 @@ header .menuRight li a {
 
 .content .newsRev {
     position: relative;
-    z-index: -1;
+    z-index: 0;
     height: 600px;
     top: -252px;
 }
 
-.content .newsBlock span.news {
+.content .newsRev .newsBlock .news {
+    float: left;
+    width: 50%;
+}
+
+.content .newsRev .newsBlock .news1 {
+    margin-top: 105px;
+    text-align: center;
+}
+
+.content .newsRev .newsBlock .news1 img {
+    padding-bottom: 55px;
+    padding-top: 37px;
+}
+
+
+.content .newsBlock span.new1 {
     font-size: 23px;
     line-height: 22px;
     font-weight: 600;
     color: #88c612;
+    text-transform: uppercase;
+}
+
+.content .newsBlock .newsIcon {
+    height: 150px;
+    float: left;
+}
+
+.content .newsBlock .news4 {
+    width: 526px;
+}
+
+.content .newsBlock .news4 img {
+    padding-top: 51px;
 }
 
 .content .newsBlock p.chate {
@@ -944,22 +979,23 @@ header .menuRight li a {
 .content .newsBlock span.date {
     font-size: 14px;
     line-height: 22px;
-    font-weight: 600;
+    font-weight: 300;
     color: #00bfc6;
 }
 
 .content .newsBlock p.link {
     font-size: 14px;
     line-height: 22px;
-    font-weight: 600;
+    font-weight: 300;
     color: #ffffff;
 }
 
 .content .newsBlock a.part {
     font-size: 14px;
     line-height: 22px;
-    font-weight: 600;
+    font-weight: 300;
     color: #88c612;
+    padding-right: 5px;
 }
 
 .content .newsBlock a.watchNew {
@@ -970,11 +1006,56 @@ header .menuRight li a {
     color: #88c612;
 }
 
-.content .reviews span.reviews {
+.content .newsBlock .news .newsButton {
+    position: relative;
+}
+
+.content .newsBlock .news .newsButton img {
+    position: absolute;
+    top: -10px;
+    left: -51px;
+}
+
+.content .newsBlock .news .newsButton a {
+    position: absolute;
+    left: 212px;
+    top: 30px;
+}
+
+.content .newsRev .newsBlock .reviews {
+    float: right;
+    width: 50%;
+}
+
+.content .reviews .rev1 {
+    margin-top: 105px;
+    text-align: center;
+}
+
+.content .reviews span.reviews1 {
     font-size: 23px;
     line-height: 22px;
     font-weight: 600;
     color: #00b998;
+    text-transform: uppercase;
+}
+
+.content .reviews .rev1 img {
+    padding-bottom: 55px;
+    padding-top: 37px;
+}
+
+.content .reviews .revIcon {
+    height: 150px;
+    float: left;
+}
+
+.content .reviews .rev5 {
+    width: 526px;
+}
+
+.content .reviews .rev5 img {
+    padding-top: 51px;
 }
 
 .content .reviews span.fio {
@@ -982,6 +1063,7 @@ header .menuRight li a {
     line-height: 22px;
     font-weight: 600;
     color: #00c8a4;
+    text-transform: uppercase;
 }
 
 .content .reviews span.adress {
@@ -1018,6 +1100,22 @@ header .menuRight li a {
     font-weight: 500;
     text-decoration: none;
     color: #00b998;
+}
+
+.content .reviews .revButton {
+    position: relative;
+}
+
+.content .reviews .revButton img {
+    position: absolute;
+    top: -10px;
+    left: -51px;
+}
+
+.content .reviews .revButton a {
+    position: absolute;
+    left: 212px;
+    top: 30px;
 }
 
 footer .partnersLeft {
@@ -1244,7 +1342,7 @@ footer .rightFooter .telFooter {
 }
 
 footer .rightFooter .widgFooter {
-    width: 33%;
+    width: 36%;
     float: left;
     margin-top: 70px;
 
@@ -1257,6 +1355,11 @@ footer .contactFooter a:nth-child(1) {
     font-weight: 300;
     text-decoration: none;
     color: #00b998;
+
+}
+
+footer .contactFooter a:nth-child(1) img {
+    padding-right: 10px;
 }
 
 footer .contactFooter a:nth-child(2) {
@@ -1265,9 +1368,27 @@ footer .contactFooter a:nth-child(2) {
     font-weight: 300;
     text-decoration: none;
     color: #00b998;
+    padding-left: 2px;
 }
 
-footer .contactFooter a:nth-child(3) {
+footer .contactFooter a:nth-child(2) img {
+    padding-right: 10px;
+}
+
+footer .contactFooter .widgFooter a:nth-child(1) {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #00bfc6;
+    padding-left: 2px;
+}
+
+footer .contactFooter .widgFooter a:nth-child(1) span {
+    padding-right: 10px;
+}
+
+footer .contactFooter .widgFooter a:nth-child(2) {
     font-size: 13px;
     line-height: 24px;
     font-weight: 300;
@@ -1275,18 +1396,15 @@ footer .contactFooter a:nth-child(3) {
     color: #00bfc6;
 }
 
-footer .contactFooter a:nth-child(4) {
-    font-size: 13px;
-    line-height: 24px;
-    font-weight: 300;
-    text-decoration: none;
-    color: #00bfc6;
+footer .contactFooter .widgFooter a:nth-child(2) span {
+    padding-right: 10px;
 }
 
 /*вторая страница*/
 
 .logoReg {
     position: relative;
+    height: 340px;
 }
 
 .logoReg .backImg {
@@ -1296,24 +1414,189 @@ footer .contactFooter a:nth-child(4) {
     top: -43px;
     left: 50%;
     margin-left: -960px;
-    z-index: -1;
+    z-index: 0;
+}
+
+.content .infStatR {
+    height: 180px;
+    position: relative;
 }
 
 
-.footer footer .backimg {
+.content .infStatR .backImg2 {
     width: 1920px;
-    height: 368px;
+    height: 180px;
     position: absolute;
-    top: -100px;
+    top: -73px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: -1;
+}
+
+.content .infStatR .infLeft {
+    margin-top: -55px;
+    float: left;
+}
+
+.content .infStatR .infRight {
+    margin-top: -55px;
+    float: right
+}
+
+.content .regLog {
+    height: 571px;
+    position: relative;
+}
+
+.content .regLog img {
+    width: 1152px;
+    height: 477px;
+    position: absolute;
+    top: 70px;
+    z-index: -1;
+}
+
+.content .regLog .backImg {
+    width: 1920px;
+    height: 824px;
+    position: absolute;
+    top: -133px;
     left: 50%;
     margin-left: -960px;
     z-index: -2;
 }
 
+.content .regLog .labelLog {
+    font-size: 39px;
+    line-height: 25px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content .regLog .regMenu a:nth-child(1) {
+    font-size: 21px;
+    line-height: 20px;
+    color: #00b998;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content .regLog .regMenu a:nth-child(2) {
+    font-size: 21px;
+    line-height: 20px;
+    color: #88c612;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content .regLog .regMenu a:nth-child(3) {
+    font-size: 21px;
+    line-height: 20px;
+    color: #00bfc6;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content .regLog .reg {
+    position: absolute;
+    left: 500px;
+    top: 105px;
+}
+
+.content .regLog .reg p {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "Boxed Book";
+    color: #bfd3d4;
+}
+
+.content .regLog .reg .registration label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.content .regLog .reg .registration label a {
+    font-size: 14px;
+    line-height: 22px;
+    color: #00b998;
+    font-family: "Boxed Book";
+}
+
+.content .regLog .reg .registration form {
+    width: 304px;
+    padding-top: 10px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.content .regLog .reg .registration .form1 {
+    float: left;
+}
+
+.content .regLog .reg .registration form.ok {
+    padding-top: 36px;
+}
+
+.content .regLog .reg .registration .form2 {
+    float: right;
+    margin-right: 84px;
+}
+
+.content .regLog .reg .registration input:nth-child(2) {
+    width: 302px;
+    height: 38px;
+    border: none;
+    border-radius: 13px;
+    background-color: #132f30;
+    box-shadow: inset 1px 1px 0px 0px rgba(0,0,0,0.87);
+}
+
+.content .regLog .registrButt {
+    position: relative;
+}
+
+.content .regLog .registrButt button {
+    background-color: transparent;
+    border: none;
+    width: 232px;
+    height: 44px;
+    z-index: 5;
+    position: absolute;
+    top: 266px;
+    right: 287px;
+}
+
+.content .regLog .registrButt span {
+    padding-left: 18px;
+}
+
+.footer footer .backimg {
+    width: 1920px;
+    height: 368px;
+    position: absolute;
+    top: -99px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: 0;
+}
+
 .footer footer {
     position: relative;
     z-index: 1;
+<<<<<<< HEAD
+    top: 157px;
+    height: 425px;
+=======
     top: 257px;
     height: 495px;
+>>>>>>> 2eb5ad6155e4fb5a8356a9b306ee8a06b5f7736e
 }
 
