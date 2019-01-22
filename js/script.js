@@ -3,7 +3,7 @@ window.onload = function () {
         var date = new Date(),
             day = date.getDate(),
             weekDay = date.getDay(),
-            weekDayArr = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресение"],
+            weekDayArr = ["", "ПОНЕДЕЛЬНИК", "ВТОРНИК", "СРЕДА", "ЧЕТВЕРГ", "ПЯТНИЦА", "СУББОТА", "ВОСКРЕСЕНИЕ"],
             month = date.getMonth(),
             monthArr = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
             year = date.getFullYear(),
@@ -17,7 +17,7 @@ window.onload = function () {
         if (sec < 10) sec = "0" + sec;
 
         document.getElementById("date").innerHTML = day + "." + monthArr[month] + "." + year;
-        document.getElementById("day").innerHTML = weekDayArr[day];
+        document.getElementById("day").innerHTML = weekDayArr[weekDay];
         document.getElementById("hour").innerHTML = hour;
         document.getElementById("minute").innerHTML = min;
         document.getElementById("second").innerHTML = sec;
