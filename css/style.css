@@ -29,12 +29,11 @@ header .backImg {
     width: 1920px;
     height: 206px;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 50%;
     margin-left: -960px;
     z-index: -1;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); ;
-}
+   }
 
 header {
     position: relative;
@@ -456,7 +455,7 @@ header .menuRight li a {
 }
 
 .content .inv .popug {
-    left: 0px;
+    left: 0;
     right: 65px;
     top: -64px;
     position: absolute;
@@ -733,7 +732,7 @@ header .menuRight li a {
     width: 1920px;
     height: 701px;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 50%;
     margin-left: -960px;
     z-index: -3;
@@ -749,7 +748,7 @@ header .menuRight li a {
     width: 1920px;
     height: 772px;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 50%;
     margin-left: -960px;
     z-index: -3;
@@ -774,8 +773,8 @@ header .menuRight li a {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 
 
@@ -1166,7 +1165,7 @@ footer {
 
 footer .footerLeft {
     display: inline-block;
-    width: 0px;
+    width: 0;
 }
 
 footer .footerLeft .partnersLeft {
@@ -1260,7 +1259,7 @@ footer .footerCenter .logoFooter {
     width: 200px;
     text-align: center;
     top: -122px;
-    left: 0px;
+    left: 0;
 }
 
 footer .footerCenter .socialFooter {
@@ -1269,7 +1268,7 @@ footer .footerCenter .socialFooter {
     right: 0;
     text-align: center;
     top: 135px;
-    left: 0px;
+    left: 0;
 }
 
 footer .footerCenter .copyright {
@@ -1311,7 +1310,7 @@ footer .logoFooter span:nth-child(1) {
 }
 
 footer .logoFooter p {
-    margin: -32px 0px 0px 0px;
+    margin: -32px 0 0 0;
 }
 
 footer .logoFooter span:nth-child(2) {
@@ -1448,13 +1447,30 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     position: relative;
 }
 
-.content .regLog img {
+.content .regLog img.layerReg {
     width: 1152px;
     height: 477px;
     position: absolute;
     top: 70px;
     z-index: -1;
 }
+
+.content .regLog img.layerLog {
+    width: 577px;
+    height: 60px;
+    position: absolute;
+    top: 165px;
+    z-index: -1;
+}
+
+.content .regLog img.layerPass {
+    width: 577px;
+    height: 60px;
+    position: absolute;
+    top: 260px;
+    z-index: -1;
+}
+
 
 .content .regLog .backImg {
     width: 1920px;
@@ -1481,7 +1497,10 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-}
+    position: absolute;
+    top: 71px;
+    left: -5px;
+    }
 
 .content .regLog .regMenu a:nth-child(2) {
     font-size: 21px;
@@ -1490,7 +1509,10 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-}
+    position: absolute;
+    top: 167px;
+    left: -5px;
+    }
 
 .content .regLog .regMenu a:nth-child(3) {
     font-size: 21px;
@@ -1499,6 +1521,14 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
+    position: absolute;
+    top: 262px;
+    left: -5px;
+    }
+
+.content .regLog .regMenu a img{
+    vertical-align: middle;
+    padding-right: 24px;
 }
 
 .content .regLog .reg {
@@ -1519,7 +1549,18 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     line-height: 22px;
     color: #ffffff;
     font-weight: 600;
+    text-transform: uppercase;
 }
+
+.content .regLog .reg .registration label.ok {
+    font-size: 13px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 300;
+    text-transform: none;
+    padding-left: 35px;
+    font-family: "Boxed Book";
+   }
 
 .content .regLog .reg .registration label a {
     font-size: 14px;
@@ -1535,6 +1576,7 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     line-height: 22px;
     color: #ffffff;
     font-weight: 600;
+    
 }
 
 .content .regLog .reg .registration .form1 {
@@ -1556,47 +1598,98 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     border: none;
     border-radius: 13px;
     background-color: #132f30;
-    box-shadow: inset 1px 1px 0px 0px rgba(0,0,0,0.87);
+    box-shadow: inset 1px 1px 0 0 rgba(0,0,0,0.87);
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 600;
+    }
+
+.content .regLog .registration .form2 .checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.content .regLog .registration .form2 .ok .checkbox + label:before {
+    content: '';
+    position: absolute;
+    top: 221px;
+    left: 316px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background: #132f30;
+    box-shadow: inset 1px 1px 0 0 rgba(0,0,0,0.87);
+    transition: .2s;
+}
+
+.content .regLog .registration .form2 .ok .checkbox + label:after {
+    content: '';
+    position: absolute;
+    top: 223px;
+    left: 318px;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    background: transparent;
+    /*box-shadow: inset 1px 1px 0 0 rgba(0,0,0,0.87);*/
+    transition: .2s;
+}
+
+.content .regLog .registration .form2 .ok .checkbox:checked + label:before {
+    background: #00b998;
+}
+.content .regLog .registration .form2 .ok .checkbox:checked + label:after {
+    left: 0;
+}
+.content .regLog .registration .form2 .ok .checkbox:focus + label:before {
+    box-shadow: inset 1px 1px 0 0 rgba(0,0,0,0.87);
 }
 
 .content .regLog .registrButt {
-    position: relative;
+position: relative;
 }
 
 .content .regLog .registrButt button {
-    background-color: transparent;
-    border: none;
-    width: 232px;
-    height: 44px;
-    z-index: 5;
-    position: absolute;
-    top: 266px;
-    right: 287px;
+background-color: transparent;
+border: none;
+width: 232px;
+height: 44px;
+z-index: 5;
+position: absolute;
+top: 266px;
+right: 287px;
 }
 
 .content .regLog .registrButt span {
-    padding-left: 18px;
+position: absolute;
+top: 10px;
+right: 23px;
+color: #00b998;
+font-size: 13px;
+line-height: 26px;
+font-weight: 600;
+text-transform: uppercase;
 }
 
+
+
 .footer footer .backimg {
-    width: 1920px;
-    height: 368px;
-    position: absolute;
-    top: -99px;
-    left: 50%;
-    margin-left: -960px;
-    z-index: 0;
+width: 1920px;
+height: 368px;
+position: absolute;
+top: -99px;
+left: 50%;
+margin-left: -960px;
+z-index: 0;
 }
 
 .footer footer {
-    position: relative;
-    z-index: 1;
-<<<<<<< HEAD
-    top: 157px;
-    height: 425px;
-=======
-    top: 257px;
-    height: 495px;
->>>>>>> 2eb5ad6155e4fb5a8356a9b306ee8a06b5f7736e
+position: relative;
+z-index: 1;
+top: 157px;
+height: 425px;
+
 }
 
