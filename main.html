@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
 <div class="bodyWrap">
@@ -31,20 +33,20 @@
                         <div class="clock">
                             <div class="leftClock">
                                 <div class="timeWrapper">
-                                    <span>16</span>
+                                    <span id="hour"></span>
                                 </div>
                                 <span>:</span>
                                 <div class="timeWrapper">
-                                    <span>16</span>
+                                    <span id="minute"></span>
                                 </div>
                                 <span>:</span>
                                 <div class="timeWrapper">
-                                    <span>16</span>
+                                    <span id="second"></span>
                                 </div>
                             </div>
                             <div class="rightClock">
-                                <p>28.06.2016</p>
-                                <p>Пятница</p>
+                                <p id="date">28.06.2016</p>
+                                <p id="day"></p>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -133,7 +135,7 @@
                         <div class="lab1">
                             <span>Удиви своего</span>
                             <span>ЛЮБИМЦА</span>
-                            <p>Незабываемым вкусом от</p>
+                            <p>незабываемым вкусом от</p>
                         </div>
                         <div class="lab2">
                             <p>professional</p>
@@ -257,8 +259,9 @@
                         <label class="comp">О компании</label>
                     </div>
                     <div class="infNaz">
-                        <span>FEED INVEST</span>
-                        <span>давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                        <p>
+                            <span>FEED INVEST</span>
+                            <span>давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
                         сосредоточиться. Lorem
                         Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
                         шаблона, а
@@ -268,6 +271,7 @@
                         ключевым
                         словам сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего
                         рождения. </span>
+                        </p>
                     </div>
                     <div class="button">
                         <a href=""><img src="img/png/podr_butt.png" alt="">
@@ -320,34 +324,67 @@
             <div class="container">
                 <div class="newsBlock">
                     <div class="news">
-                        <div class="news1">
-                            <span class="news">Последняя новость</span>
+                        <div class="newsText">
+                            <div class="news1">
+                                <span class="new1">Последняя новость</span>
+                                <img src="img/png/top_layer_rev_news.png" alt="">
+                            </div>
+
+                            <div class="newsIcon">
+                                <img src="img/png/news_logo.png" alt="">
+                            </div>
+                            <div class="news2">
+                                <p class="chate">ОТКРЫТ НОВЫЙ ОФИЦИАЛЬНЫЙ АНГЛОЯЗЫЧНЫЙ</p>
+                                <p class="chate">СКАЙП-ЧАТ</p>
+                            </div>
+                            <div class="news3">
+                                <span class="date">28 июля 2016, 16:32</span>
+                            </div>
+                            <div class="news4">
+                                <p class="link">Присоединяйтесь и принимайте участие в открытом обсуждении платформы.
+                                    Количество
+                                    иностранных</p>
+
+                                <p class="link"><a href="" class="part">партнеров и инвесторов</a>растет ускоренными
+                                    темпами. Интерес к деятельности компании
+                                    поступает...</p>
+                                <img src="img/png/bottom_layer_rev_news.png" alt="">
+                            </div>
+
                         </div>
-                        <div class="news2">
-                            <p class="chate">ОТКРЫТ НОВЫЙ ОФИЦИАЛЬНЫЙ АНГЛОЯЗЫЧНЫЙ СКАЙП-ЧАТ</p>
+                        <div class="newsButton">
+                            <a href="" class="watchNew"><img src="img/png/news_butt.png" alt="">СМОТРЕТЬ ВСЕ НОВОСТИ</a>
                         </div>
-                        <div class="news3">
-                            <span class="date">28 июля 2016, 16:32</span>
-                        </div>
-                        <div class="news4">
-                            <img src="img/png/news_logo.png" alt="">
-                            <p class="link">Присоединяйтесь и принимайте участие в открытом обсуждении платформы.
-                                Количество
-                                иностранных</p>
-                            <a href="" class="part">партнеров и инвесторов</a>
-                            <p class="link">растет ускоренными темпами. Интерес к деятельности компании поступает...</p>
-                        </div>
-                        <a href="" class="watchNew">СМОТРЕТЬ ВСЕ НОВОСТИ</a>
                     </div>
                     <div class="reviews">
-                        <span class="reviews">Последний отзыв</span>
-                        <span class="fio">Иванов Александр петрович</span>
-                        <span class="adress">Россия, г. Москва</span>
-                        <span class="date">21 июля 2016, 15:40</span>
-                        <p class="otz">Все работает ОТЛИЧНО!!! вывод и зачисление происходит
-                            в течении 5 минут! РЕГИСТРИРУЙТЕСЬ! Буду рад видеть Вас в ЧИСЛЕ своей КОМАНДЫ!</p>
-                        <a href="https://feed-invest.com/?ref=alexander91" class="linkRef">https://feed-invest.com/?ref=alexander91</a>
-                        <a href="" class="otz">СМОТРЕТЬ ВСЕ ОТЗЫВЫ</a>
+                        <div class="revText">
+                            <div class="rev1">
+                                <span class="reviews1">Последний отзыв</span>
+                                <img src="img/png/top_layer_rev_news.png" alt="">
+                            </div>
+                            <div class="revIcon">
+                                <img src="img/png/rews_logo_03.png" alt="">
+                            </div>
+                            <div class="rev2">
+                                <span class="fio">Иванов Александр петрович</span>
+                            </div>
+                            <div class="rev3">
+                                <span class="adress">Россия, г. Москва</span>
+                            </div>
+                            <div class="rev4">
+                                <span class="date">21 июля 2016, 15:40</span>
+                            </div>
+                            <div class="rev5">
+                                <p class="otz">Все работает ОТЛИЧНО!!! вывод и зачисление происходит
+                                    в течении 5 минут! РЕГИСТРИРУЙТЕСЬ! Буду рад видеть Вас в ЧИСЛЕ своей КОМАНДЫ!</p>
+                                <a href="https://feed-invest.com/?ref=alexander91" class="linkRef">https://feed-invest.com/?ref=alexander91</a>
+                                <img src="img/png/bottom_layer_rev_news.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="revButton">
+                            <a href="" class="otz"><img src="img/png/rews_butt.png" alt="">СМОТРЕТЬ ВСЕ ОТЗЫВЫ</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -378,20 +415,20 @@
                     <li class="mf1">
                         <ul>
                             <li>
-                                <a href="">ГЛАВНАЯ</a>
+                                <a href="">Главная</a>
                             </li>
                             <li>
-                                <a href="">О НАС</a>
+                                <a href="">О нас</a>
                             </li>
                         </ul>
                     </li>
                     <li class="mf2">
                         <ul>
                             <li>
-                                <a href="">ИНВЕСТОРАМ</a>
+                                <a href="">Инвесторам</a>
                             </li>
                             <li>
-                                <a href="">ПАРТНЁРАМ</a>
+                                <a href="">Партнёрам</a>
                             </li>
                         </ul>
                     </li>
@@ -401,17 +438,17 @@
                                 <a href="">FAQ</a>
                             </li>
                             <li>
-                                <a href="">ПРАВИЛА</a>
+                                <a href="">Правила</a>
                             </li>
                         </ul>
                     </li>
                     <li class="mf4">
                         <ul>
                             <li>
-                                <a href="">КОНТАКТЫ</a>
+                                <a href="">Контакты</a>
                             </li>
                             <li>
-                                <a href="">ИНФОРМАЦИЯ</a>
+                                <a href="">Информация</a>
                             </li>
                         </ul>
                     </li>
