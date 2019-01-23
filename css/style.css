@@ -33,7 +33,7 @@ header .backImg {
     left: 50%;
     margin-left: -960px;
     z-index: -1;
-   }
+}
 
 header {
     position: relative;
@@ -69,6 +69,7 @@ header .left .contact a {
     color: #132f30;
     text-decoration-line: none;
     padding-right: 23px;
+    transition: all 0.2s;
 }
 
 header .left .contact span {
@@ -185,6 +186,11 @@ header .right .con a {
     color: #132f30;
     font-weight: 300;
     text-decoration: none;
+    transition: all 0.2s;
+}
+
+header .right .con a:hover {
+    opacity: 0.7;
 }
 
 header .right .con span {
@@ -216,6 +222,11 @@ header .right .button .but3 {
 
 header .button a {
     text-decoration: none;
+    transition: all 0.2s;
+}
+
+header .button a:hover {
+    opacity: 0.7;
 }
 
 header .button span.skyp {
@@ -257,10 +268,15 @@ header .menu {
 
 header .menu .menuLeft a {
     display: block;
+    transition: all 0.2s;
 }
 
 header .menu .menuLeft a:hover {
     opacity: 0.7;
+}
+
+header .menuRight a {
+    transition: all 0.2s;
 }
 
 header .menu .menuRight a:hover {
@@ -393,9 +409,12 @@ header .menuRight li a {
 
 .content .label .labelInf .investButt a {
     position: relative;
-
+    transition: all 0.2s;
 }
 
+.content .label .labelInf .investButt a:hover {
+    opacity: 0.7;
+}
 
 .content .label .labelInf .investButt a span {
     position: absolute;
@@ -848,6 +867,11 @@ header .menuRight li a {
     left: 70px;
     right: 0;
     position: absolute;
+    transition: all 0.2s;
+}
+
+.content .infKomp .button a {
+    opacity: 0.7;
 }
 
 .content .infKomp .button span {
@@ -924,6 +948,11 @@ header .menuRight li a {
     left: 402px;
     position: absolute;
     top: 547px;
+    transition: all 0.2s;
+}
+
+.content .detail .detailButt a:hover {
+    opacity: 0.7;
 }
 
 .content .newsRev .backImg5 {
@@ -1031,6 +1060,11 @@ header .menuRight li a {
     position: absolute;
     left: 212px;
     top: 30px;
+    transition: all 0.2s;
+}
+
+.content .newsBlock .news .newsButton a:hover {
+    opacity: 0.7;
 }
 
 .content .newsRev .newsBlock .reviews {
@@ -1127,6 +1161,11 @@ header .menuRight li a {
     position: absolute;
     left: 212px;
     top: 30px;
+    transition: all 0.2s;
+}
+
+.content .reviews .revButton a:hover {
+    opacity: 0.7;
 }
 
 footer .partnersLeft {
@@ -1512,7 +1551,7 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     position: absolute;
     top: 71px;
     left: -5px;
-    }
+}
 
 .content .regLog .regMenu a:nth-child(2) {
     font-size: 21px;
@@ -1524,7 +1563,7 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     position: absolute;
     top: 167px;
     left: -5px;
-    }
+}
 
 .content .regLog .regMenu a:nth-child(3) {
     font-size: 21px;
@@ -1536,9 +1575,9 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     position: absolute;
     top: 262px;
     left: -5px;
-    }
+}
 
-.content .regLog .regMenu a img{
+.content .regLog .regMenu a img {
     vertical-align: middle;
     padding-right: 24px;
 }
@@ -1572,7 +1611,7 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     text-transform: none;
     padding-left: 35px;
     font-family: "Boxed Book";
-   }
+}
 
 .content .regLog .reg .registration label a {
     font-size: 14px;
@@ -1588,7 +1627,7 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     line-height: 22px;
     color: #ffffff;
     font-weight: 600;
-    
+
 }
 
 .content .regLog .reg .registration .form1 {
@@ -1610,12 +1649,12 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     border: none;
     border-radius: 13px;
     background-color: #132f30;
-    box-shadow: inset 1px 1px 0 0 rgba(0,0,0,0.87);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.87);
     color: #ffffff;
     font-size: 13px;
     line-height: 22px;
     font-weight: 600;
-    }
+}
 
 .content .regLog .registration .form2 .checkbox {
     position: absolute;
@@ -1632,8 +1671,8 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     height: 20px;
     border-radius: 5px;
     background: #132f30;
-    box-shadow: inset 1px 1px 0 0 rgba(0,0,0,0.87);
-    transition: .2s;
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.87);
+    transition: all 0.2s;
 }
 
 .content .regLog .registration .form2 .ok .checkbox + label:after {
@@ -1646,62 +1685,62 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     border-radius: 3px;
     background: transparent;
     /*box-shadow: inset 1px 1px 0 0 rgba(0,0,0,0.87);*/
-    transition: .2s;
-}
+    transition: all 0.2s;}
 
 .content .regLog .registration .form2 .ok .checkbox:checked + label:before {
     background: #00b998;
 }
+
 .content .regLog .registration .form2 .ok .checkbox:checked + label:after {
     left: 0;
 }
+
 .content .regLog .registration .form2 .ok .checkbox:focus + label:before {
-    box-shadow: inset 1px 1px 0 0 rgba(0,0,0,0.87);
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.87);
 }
 
 .content .regLog .registrButt {
-position: relative;
+    position: relative;
 }
 
 .content .regLog .registrButt button {
-background-color: transparent;
-border: none;
-width: 232px;
-height: 44px;
-z-index: 5;
-position: absolute;
-top: 266px;
-right: 287px;
+    background-color: transparent;
+    border: none;
+    width: 232px;
+    height: 44px;
+    z-index: 5;
+    position: absolute;
+    top: 266px;
+    right: 287px;
 }
 
 .content .regLog .registrButt span {
-position: absolute;
-top: 10px;
-right: 23px;
-color: #00b998;
-font-size: 13px;
-line-height: 26px;
-font-weight: 600;
-text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    right: 23px;
+    color: #00b998;
+    font-size: 13px;
+    line-height: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
-
 
 
 .footer footer .backimg {
-width: 1920px;
-height: 368px;
-position: absolute;
-top: -99px;
-left: 50%;
-margin-left: -960px;
-z-index: 0;
+    width: 1920px;
+    height: 368px;
+    position: absolute;
+    top: -99px;
+    left: 50%;
+    margin-left: -960px;
+    z-index: 0;
 }
 
 .footer footer {
-position: relative;
-z-index: 1;
-top: 157px;
-height: 425px;
+    position: relative;
+    z-index: 1;
+    top: 157px;
+    height: 425px;
 
 }
 
