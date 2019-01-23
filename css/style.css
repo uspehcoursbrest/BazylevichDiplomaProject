@@ -766,12 +766,12 @@ header .menuRight li a {
     top: 0;
     left: 50%;
     margin-left: -960px;
-    z-index: -3;
+    z-index: -1;
 }
 
 .content .about {
     position: relative;
-    z-index: -2;
+    z-index: 0;
     height: 695px;
 }
 
@@ -870,7 +870,7 @@ header .menuRight li a {
     transition: all 0.2s;
 }
 
-.content .infKomp .button a {
+.content .infKomp .button a:hover {
     opacity: 0.7;
 }
 
