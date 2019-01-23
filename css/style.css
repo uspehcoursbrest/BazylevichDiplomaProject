@@ -59,6 +59,10 @@ header .left .contact {
     margin-top: 16px;
 }
 
+header .left .contact a:hover {
+    opacity: 0.7;
+}
+
 header .left .contact a {
     font-size: 13px;
     line-height: 22px;
@@ -253,6 +257,14 @@ header .menu {
 
 header .menu .menuLeft a {
     display: block;
+}
+
+header .menu .menuLeft a:hover {
+    opacity: 0.7;
+}
+
+header .menu .menuRight a:hover {
+    opacity: 0.7;
 }
 
 header .menuLeft {
