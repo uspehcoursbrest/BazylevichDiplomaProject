@@ -1541,58 +1541,76 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     text-align: center;
 }
 
-.content .regLog .regMenu a:nth-child(1) {
+.content .regLog .regMenu {
+    float: left;
+    margin-top: 47px;
+}
+
+.content .regLog .regMenu li a:nth-child(1) {
     font-size: 21px;
     line-height: 20px;
     color: #00b998;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    position: absolute;
-    top: 71px;
-    left: -5px;
+
 }
 
-.content .regLog .regMenu a:nth-child(2) {
+.content .regLog .regMenu li a:nth-child(2) {
     font-size: 21px;
     line-height: 20px;
     color: #88c612;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    position: absolute;
-    top: 167px;
-    left: -5px;
+
 }
 
-.content .regLog .regMenu a:nth-child(3) {
+.content .regLog .regMenu li a:nth-child(3) {
     font-size: 21px;
     line-height: 20px;
     color: #00bfc6;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    position: absolute;
-    top: 262px;
-    left: -5px;
+
 }
+
+.content .regLog .regMenu li + li {
+    padding-top: 37px;
+}
+
 
 .content .regLog .regMenu a img {
     vertical-align: middle;
     padding-right: 24px;
 }
 
-.content .regLog .reg {
-    position: absolute;
-    left: 500px;
-    top: 105px;
+.regMenu ul {
+    width: 445px;
+    float: left;
 }
+
+.regMenu .tabContent {
+    width: calc(100% - 445px);
+    float: right;   
+    margin-right: -26px;
+}
+
+/*.content .regLog .reg {*/
+    /*position: absolute;*/
+    /*left: 500px;*/
+    /*top: 105px;*/
+/*}*/
 
 .content .regLog .reg p {
     font-size: 14px;
     line-height: 22px;
     font-family: "Boxed Book";
     color: #bfd3d4;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    width: 650px;
 }
 
 .content .regLog .reg .registration label {
@@ -1611,6 +1629,7 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     text-transform: none;
     padding-left: 35px;
     font-family: "Boxed Book";
+    position: relative;
 }
 
 .content .regLog .reg .registration label a {
@@ -1640,7 +1659,7 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
 
 .content .regLog .reg .registration .form2 {
     float: right;
-    margin-right: 84px;
+
 }
 
 .content .regLog .reg .registration input:nth-child(2) {
@@ -1665,8 +1684,8 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
 .content .regLog .registration .form2 .ok .checkbox + label:before {
     content: '';
     position: absolute;
-    top: 221px;
-    left: 316px;
+    top: 0;
+    left: 0;
     width: 20px;
     height: 20px;
     border-radius: 5px;
@@ -1685,7 +1704,8 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     border-radius: 3px;
     background: transparent;
     /*box-shadow: inset 1px 1px 0 0 rgba(0,0,0,0.87);*/
-    transition: all 0.2s;}
+    transition: all 0.2s;
+}
 
 .content .regLog .registration .form2 .ok .checkbox:checked + label:before {
     background: #00b998;
@@ -1699,6 +1719,258 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.87);
 }
 
+
+
+
+
+
+.content .regLog .reg .login label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.content .regLog .reg .login label.ok {
+    font-size: 13px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 300;
+    text-transform: none;
+    padding-left: 35px;
+    font-family: "Boxed Book";
+    position: relative;
+}
+
+.content .regLog .reg .login label a {
+    font-size: 14px;
+    line-height: 22px;
+    color: #00b998;
+    font-family: "Boxed Book";
+}
+
+.content .regLog .reg .login form {
+    width: 304px;
+    padding-top: 10px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 600;
+
+}
+
+
+
+.content .regLog .reg .login .form1 {
+    float: left;
+}
+
+.content .regLog .reg .login form.ok {
+    padding-top: 36px;
+}
+
+.content .regLog .reg .login .form2 {
+    float: right;
+
+}
+
+.content .regLog .reg .login input:nth-child(2) {
+    width: 302px;
+    height: 38px;
+    border: none;
+    border-radius: 13px;
+    background-color: #132f30;
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.87);
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+.content .regLog .login .form2 .checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.content .regLog .login .form2 .ok .checkbox + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background: #132f30;
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.87);
+    transition: all 0.2s;
+}
+
+.content .regLog .login .form2 .ok .checkbox + label:after {
+    content: '';
+    position: absolute;
+    top: 223px;
+    left: 318px;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    background: transparent;
+    /*box-shadow: inset 1px 1px 0 0 rgba(0,0,0,0.87);*/
+    transition: all 0.2s;
+}
+
+.content .regLog .login .form2 .ok .checkbox:checked + label:before {
+    background: #00b998;
+}
+
+.content .regLog .login .form2 .ok .checkbox:checked + label:after {
+    left: 0;
+}
+
+.content .regLog .login .form2 .ok .checkbox:focus + label:before {
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.87);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content .regLog .reg .backPass label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.content .regLog .reg .backPass label.ok {
+    font-size: 13px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 300;
+    text-transform: none;
+    padding-left: 35px;
+    font-family: "Boxed Book";
+    position: relative;
+}
+
+.content .regLog .reg .backPass label a {
+    font-size: 14px;
+    line-height: 22px;
+    color: #00b998;
+    font-family: "Boxed Book";
+}
+
+.content .regLog .reg .backPass form {
+    width: 304px;
+    padding-top: 10px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #ffffff;
+    font-weight: 600;
+
+}
+
+
+
+.content .regLog .reg .backPass .form1 {
+    float: left;
+}
+
+.content .regLog .reg .backPass form.ok {
+    padding-top: 36px;
+}
+
+.content .regLog .reg .backPass .form2 {
+    float: right;
+
+}
+
+.content .regLog .reg .backPass input:nth-child(2) {
+    width: 302px;
+    height: 38px;
+    border: none;
+    border-radius: 13px;
+    background-color: #132f30;
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.87);
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+.content .regLog .backPass .form2 .checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.content .regLog .backPass .form2 .ok .checkbox + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background: #132f30;
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.87);
+    transition: all 0.2s;
+}
+
+.content .regLog .backPass .form2 .ok .checkbox + label:after {
+    content: '';
+    position: absolute;
+    top: 223px;
+    left: 318px;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    background: transparent;
+    /*box-shadow: inset 1px 1px 0 0 rgba(0,0,0,0.87);*/
+    transition: all 0.2s;
+}
+
+.content .regLog .backPass .form2 .ok .checkbox:checked + label:before {
+    background: #00b998;
+}
+
+.content .regLog .backPass .form2 .ok .checkbox:checked + label:after {
+    left: 0;
+}
+
+.content .regLog .backPass .form2 .ok .checkbox:focus + label:before {
+    box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.87);
+}
+
+.content .regLog .login .registrButt button {
+    top: 125px;
+}
+
+.content .regLog .backPass .registrButt button {
+    top: 125px;
+}
+
+
+
+
+
+
+
 .content .regLog .registrButt {
     position: relative;
 }
@@ -1711,7 +1983,7 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     z-index: 5;
     position: absolute;
     top: 266px;
-    right: 287px;
+    right: 200px;
 }
 
 .content .regLog .registrButt span {
@@ -1740,7 +2012,7 @@ footer .contactFooter .widgFooter a:nth-child(2) span {
     position: relative;
     z-index: 1;
     top: 157px;
-    height: 425px;
+    
 
 }
 
